@@ -22,4 +22,10 @@ public class RestServiceController {
 		return "ok";
 	}
 	
+	@GetMapping("/update")
+	public String greeting2() {
+		sharePointClient.updateList(null);
+		return "ok";
+	}
+	
 }
